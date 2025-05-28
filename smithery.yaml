@@ -4,5 +4,8 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    (config) => ({ command: "uvicorn", args: ["server:app", "--host", "0.0.0.0", "--port", "8080"] })
+    (config) => ({
+      command: "uvicorn",
+      args: ["server:app", "--host", "0.0.0.0", "--port", "8080"]
+    })
   exampleConfig: {}
